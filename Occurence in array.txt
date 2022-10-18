@@ -1,0 +1,28 @@
+//Ankit Kumar Mishra
+//Roll no 2100290120030
+//Program to find the occurence
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int arr[100],i,n,num,count=0;
+    printf(" Enter the size of array  ");
+    scanf(" %d ",&n);
+    
+    printf("\nEnter the Elements \n");
+    
+    for(i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    
+    printf("\nFind the number for which you want to find the occurence \n");
+    scanf("%d",&num);
+    
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]==num)
+       { count++;
+        }
+    }
+ printf("\nThe occurence of %d is %d ",num,count);
+ return 0;
+}
